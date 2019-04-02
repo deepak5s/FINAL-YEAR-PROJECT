@@ -1,4 +1,4 @@
-package com.ezone.Ezonefrontend.controller;
+package net.kzn.onlineshopping.controller;
 
 import java.util.List;
 
@@ -18,11 +18,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import com.ezone.Ezonebackend.dao.CategoryDAO;
-import com.ezone.Ezonebackend.dao.ProductDAO;
-import com.ezone.Ezonebackend.dto.Category;
-import com.ezone.Ezonebackend.dto.Product;
 
+import net.kzn.onlineshopping.util.FileUtil;
+import net.kzn.onlineshopping.validator.ProductValidator;
+import net.kzn.shoppingbackend.dao.CategoryDAO;
+import net.kzn.shoppingbackend.dao.ProductDAO;
+import net.kzn.shoppingbackend.dto.Category;
+import net.kzn.shoppingbackend.dto.Product;
 
 @Controller
 @RequestMapping("/manage")
@@ -152,3 +154,5 @@ public class ManagementController {
 	
 	
 }
+
+	
